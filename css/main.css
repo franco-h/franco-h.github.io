@@ -28,6 +28,22 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: #0051ff; }
 
+.bg-main {
+  background: #0051ff;
+  color: set-text-color(#0051ff); }
+
+.bg-dark {
+  background: #333;
+  color: set-text-color(#333); }
+
+.bg-light {
+  background: #f4f4f4;
+  color: set-text-color(#f4f4f4); }
+
+.bg-medium {
+  background: #ccc;
+  color: set-text-color(#ccc); }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -140,10 +156,34 @@ img {
       padding: 0.5rem;
       opacity: 0.9; }
 
+#header-inner {
+  background: url("../img/cal_gold.jpg") no-repeat 20% 30%/cover;
+  height: 6rem;
+  border-bottom: 3px solid #0051ff; }
+
 #home-a .specials {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'id1 id2';
+  gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #0051ff;
+  padding: 0.8rem; }
+
+#about-a .id1 {
+  grid-area: id1; }
+
+#about-a .id2 {
+  grid-area: id2; }
 
 #main-footer {
   background: #333;
