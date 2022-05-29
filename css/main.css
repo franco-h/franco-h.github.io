@@ -35,8 +35,36 @@ input[class^='btn-']:hover {
 .text-center {
   text-align: center; }
 
-.material-symbols-outlined {
-  font-size: 100rem; }
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #0051ff;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -64,12 +92,14 @@ img {
   width: 180px;
   height: 100px;
   color: #fff;
+  justify-content: left;
   text-transform: uppercase; }
 
 #logo2 {
   width: 220px;
   height: 100px;
   color: #fff;
+  justify-content: left;
   text-transform: uppercase; }
 
 #main-nav {
@@ -102,3 +132,36 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+    #header-home .header-content .person-img {
+      width: 14rem;
+      height: 14rem;
+      border-radius: 50%;
+      border: 1px white;
+      padding: 0.5rem;
+      opacity: 0.9; }
+
+#home-a .specials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social.fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .social.fab:hover {
+        background: #0051ff; }
