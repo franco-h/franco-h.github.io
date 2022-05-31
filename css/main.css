@@ -34,7 +34,7 @@ input[class^='btn-']:hover {
 
 .bg-dark {
   background: #333;
-  color: set-text-color(#333); }
+  color: set-text-color(#f4f4f4); }
 
 .bg-light {
   background: #f4f4f4;
@@ -75,6 +75,26 @@ input[class^='btn-']:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.about-title {
+  color: #f4f4f4;
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.about-skill {
+  color: #f4f4f4; }
+
 .bottom-line {
   height: 2px;
   width: 3rem;
@@ -106,14 +126,14 @@ img {
 
 #logo {
   width: 180px;
-  height: 100px;
+  height: 97px;
   color: #fff;
   justify-content: left;
   text-transform: uppercase; }
 
 #logo2 {
   width: 220px;
-  height: 100px;
+  height: 97px;
   color: #fff;
   justify-content: left;
   text-transform: uppercase; }
@@ -168,15 +188,16 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'id1 id2';
+  grid-template-areas: 'bioimage bio bio' ' id1 id2 id3';
   gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  height: 20rem;
+  width: 14rem; }
 
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #0051ff;
   padding: 0.8rem; }
 
 #about-a .id1 {
@@ -184,6 +205,26 @@ img {
 
 #about-a .id2 {
   grid-area: id2; }
+
+#about-a .id3 {
+  grid-area: id3; }
+
+#about-a .id1 .fa,
+#about-a .id2 .fa,
+#about-a .id3 .fa {
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.3rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #ffff;
+    text-align: center;
+    background: #FAC213; }
 
 #main-footer {
   background: #333;
@@ -194,7 +235,7 @@ img {
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    #main-footer .footer-content .social.fab {
+    #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
@@ -203,5 +244,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem; }
-      #main-footer .footer-content .social.fab:hover {
-        background: #0051ff; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #FAC213; }
+      #main-footer .footer-content .social .fab-a {
+        color: inherit; }
